@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="main.html">Hasiera</a></li>
+            <li><a href="booking.html">Erreserba</a></li>
+            <li><a class="active" href="photos.html">Argazkiak</a></li>
+            <li><a href="timetable.html">Ordutegia</a></li>
+            <li><a href="products.html">Produktuak</a></li>
+            <li style="float:right"><a style="margin-left:15px;" href="contactus.html">Kontaktatu gurekin</a></li>
+            <li style="margin-top:17px; float:right"><a style="font-size:20px; padding: 5px 5px 5px 5px;"
+                    href="main.html">EU</a></li>
+            <li style="margin-top:17px; float:right"><a style="font-size:20px; padding: 5px 5px 5px 5px;"
+                    href="main_es.html">ES</a></li>
+            <li style="margin-top:17px; float:right"><a style="font-size:20px; padding: 5px 5px 5px 5px;" class="active"
+                    href="main_eu.html">EU</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid mt-2">
+        <br>
+        <h1 style="text-align: center;">Argazkiak</h1>
+        <p style="text-align: center;">Hona hemen gure garairaino sartu diren autoen aurrean eta ondoren atera diren argazki batzuk.</p>
+        <div class="row">
+            <div class="col p-2 d-flex flex-column align-items-center">
+                <p>Audi A3</p>
+                <div id="image1" class="image-container">
+                    <img id="before_after_1" src="Images/before_after_1.jpg" style="width: 600px; height: auto;" />
+                    <img id="before_after_2" src="Images/before_after_2.jpg" style="width: 600px; height: auto; display: none;" />
+                    <button class="image-switch-button right" onclick="showImage(2)">
+                        <span class="arrow">→</span>
+                    </button>
+                    <button class="image-switch-button left" onclick="showImage(1)" style="display: none;">
+                        <span class="arrow">←</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col p-2 d-flex flex-column align-items-center">
+                <p>Toyota Supra Mk4</p>
+                <div id="image2" class="image-container">
+                    <img id="supra_before" src="Images/supra_before.jpg" style="width: 600px; height: auto;" />
+                    <img id="supra_after" src="Images/supra_after.jpg" style="width: 600px; height: auto; display: none;" />
+                    <button class="image-switch-button right2" onclick="showSupra(2)">
+                        <span class="arrow">→</span>
+                    </button>
+                    <button class="image-switch-button left2" onclick="showSupra(1)" style="display: none;">
+                        <span class="arrow">←</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="col p-2 bg-dark ">
+                </br>
+                <p style="color: white; font-weight: bold; display: inline;">Email:</p>
+                <p style="color: white; display: inline;">info@diygarage.com</p>
+                </br>
+                </br>
+
+                <p style="color: white; font-weight: bold; display:inline;">Tel:</p>
+                <p style="color: white; display:inline;">944 12 12 89</p>
+                </br>
+                </br>
+
+                <p style="color:white; font-weight: bold;">Sozial Media: </p>
+                <a href="https://www.instagram.com/diygarage2023/" name="instagram">
+                    <img id="icon" src="Images/Instagram_icon.png" />
+                    <p style="color: white; display: inline;"> @diygarage</p>
+                </a>
+                </br>
+                <a href="https://twitter.com" name="twitter">
+                    <img id="icon" src="Images/twitter_icon.jpg" />
+                    <p style="color: white; display: inline;"> @diygarage</p>
+                </a>
+                </br>
+                <a href="https://facebook.com" name="facebook">
+                    <img id="icon" src="Images/facebook_icon.png" />
+                    <p style="color: white; display: inline;"> @diygarage</p>
+                </a>
+                </br>
+            </div>
+            <div class="col p-2 bg-dark">
+                <br>
+                <p style="text-align:right; color:white; float:left;">Kokalekua: Espainia, Bizkaia, Bilbo, Don Diego López de Haro Gran Via, 12 </p>
+                <a href="https://www.google.com/maps/place/Gran+V%C3%ADa+de+Don+Diego+L%C3%B3pez+de+Haro,+12,+48001+Bilbo,+Bizkaia/@43.2620877,-2.9294872,20.04z/data=!4m6!3m5!1s0xd4e4fd062520d51:0x53bdd5462c753695!8m2!3d43.2622527!4d-2.9298469!16s%2Fg%2F11bw44fk0y?entry=ttu"
+                    name="maps">
+                    <img id="icon_maps" src="Images/google_maps_icon.png" /></a>
+                <br>
+                <br>
+                <p style="color: white;">© 2023-2023, diygarage.com, Inc. edo bere afiliatuak</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>

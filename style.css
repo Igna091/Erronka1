@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0; /* very light grey */
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.875em;
+    padding: 0;
+    background-color: #2c3e50; 
+    overflow: hidden;
+    border-radius: 1.875em;
+    margin-top: 0.3125em;
+    margin: 0.625em;
+}
+
+li {
+    float: left;
+}
+
+div.right {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.875em 1em;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #34495e; /* slightly lighter blue on hover */
+}
+
+.active {
+    background-color: #3498db; /* a contrasting color for active state */
+}
+
+#title {
+    text-align: center;
+    font-size: 4.6875em;
+}
+
+#desc {
+    text-align: center;
+    font-size: 1em;
+}
+
+.center {
+    margin-left: 35em;
+}
+
+.tamaina {
+    margin-left: 10em;
+}
+
+#outside {
+    width: 100%;
+    height: auto;
+    max-width: 46.25em;
+    margin-left: 9em;
+}
+
+#inside {
+    width: 100%;
+    height: auto;
+    max-width: 46.25em;
+    margin-left: 3em;
+}
+
+#icon {
+    margin-left: 0.125em;
+    width: 0.9375em;
+    height: auto;
+}
+
+#icon_maps {
+    width: 2.1875em;
+    height: auto;
+    margin-left: 0.3125em;
+    margin-top: -0.375em;
+}
+
+#language {
+    padding: 0.3125em;
+    font-size: 1.0625em;
+    margin-top: 1.25em;
+}
+
+.right {
+    right: 10px;
+}
+
+.right2 {
+    right: 10px;
+}
+
+.left {
+    left: 10px;
+}
+
+.left2 {
+    left: 10px;
+}
+
+.arrow {
+    font-size: 36px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-switch-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 48em) {
+    ul {
+        font-size: 1.25em;
+    }
+
+    li a {
+        padding: 0.625em 0.75em;
+    }
+
+    #title {
+        font-size: 3.125em;
+    }
+
+    #icon {
+        margin-left: 0.0625em;
+        width: 0.625em;
+    }
+
+    #icon_maps {
+        width: 1.5625em;
+        margin-left: 0.15625em;
+        margin-top: -0.1875em;
+    }
+
+    #language {
+        font-size: 0.9375em;
+        margin-top: 0.625em;
+    }
+}
